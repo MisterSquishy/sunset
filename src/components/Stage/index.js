@@ -6,6 +6,7 @@ import { useDebug } from '../../hooks/useDebug'
 
 import "./style.css"
 import { useTimeOverride } from '../../hooks/useTimeOverride';
+import Ground from '../Ground';
 
 const Stage = () => {
   const debug = useDebug()
@@ -60,7 +61,9 @@ const Stage = () => {
     {debug && (
       <DebugBar />
     )}
-    <div className='gradient' style={{ background }} />
+    <div className='gradient' style={{ background }}>
+      <Ground />
+    </div>
   </div>
 }
 

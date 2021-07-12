@@ -1,0 +1,8 @@
+.ground {
+  border-radius: 50% 50% 0 0;
+  background-color: green;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 65%;
+}
