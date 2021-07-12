@@ -1,23 +1,13 @@
-import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react"
-import Component from "./Component";
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Stage from "./components/Stage";
 
 import './App.css';
 
-const config = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
-}
-
-export const theme = extendTheme({ config })
-
 function App() {
-  return (
-    <ChakraProvider theme={theme}>
-      <Box>
-        <Component />
-      </Box>
-    </ChakraProvider>
-  );
+  return <Router>
+    <Route component={Stage} />
+  </Router>;
 }
 
 export default App;
